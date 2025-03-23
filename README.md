@@ -60,7 +60,7 @@ Modify input ranges or add additional regressors by updating:
 
 ## Maintainers
 
-- Your Name (lfpazevedo@gmail.com)
+- Luis Fernando Pereira Azevedo (lfpazevedo@gmail.com)
 
 ---
 
