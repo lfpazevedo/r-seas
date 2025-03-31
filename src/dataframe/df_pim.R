@@ -3,7 +3,7 @@
 make_dataframe <- function(carnival_range, corpus_range, arima_model) {
   # Load and process holidays
   url <- "https://www.anbima.com.br/feriados/arqs/feriados_nacionais.xls"
-  raw_data <- fetch_holiday_data(url)
+  raw_data <- import_excel_data(url, file_extension = ".xls")
   holiday_data <- process_holiday_data(raw_data)
   holiday_data <- holiday_data %>% mutate(Year = as.numeric(format(Date, "%Y")))
   filtered_holidays <- filter_holidays_by_year(holiday_data, "2001-01-01", "2026-12-31")
